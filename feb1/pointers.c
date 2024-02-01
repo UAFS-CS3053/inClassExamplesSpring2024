@@ -7,7 +7,9 @@ int main(int argc, char*argv[]){
     int value=5;
     int *ptr;
     int **dptr;
-    
+
+    ptr=&value;
+    dptr=&ptr;    
 
     printf("val[%p]: %d\n", &value, value);
     printf("ptr[%p]:  %p -> %d\n",&ptr,ptr,*ptr);
