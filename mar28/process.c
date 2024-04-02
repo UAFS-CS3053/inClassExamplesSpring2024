@@ -8,6 +8,7 @@ int main(int argc, char *argv[]){
     pid_t child;
 
     child=fork();
+    child=fork();
     if(child==0){
         //** Child **
         printf("Child: %d -> %d\n",getpid(),getppid());
